@@ -1,4 +1,0 @@
-_name_: video
-loss: cross_entropy
-metrics:
-  - accuracy
