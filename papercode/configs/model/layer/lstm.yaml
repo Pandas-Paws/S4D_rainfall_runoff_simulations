@@ -1,3 +1,0 @@
-_name_: lstm
-d_hidden: ${model.d_model}
-transposed: False
