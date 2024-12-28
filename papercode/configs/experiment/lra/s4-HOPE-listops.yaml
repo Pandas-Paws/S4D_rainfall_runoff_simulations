@@ -1,0 +1,45 @@
+# @package _global_
+defaults:
+  - /pipeline: listops
+  - /model: HOPE
+  - override /scheduler: cosine_warmup
+
+model:
+  dropout: 0.0
+  n_layers: 8
+  d_model: 128
+  prenorm: false
+  norm: batch
+  layer:
+    d_state: 64
+    lr:
+      dt: 0
+      A: 0.001
+      B: 0.001
+    dt_min: 0.0001
+    dt_max: 1
+    init: legs
+    bidirectional: true
+    final_act: glu
+    n_ssm: 128
+    scale_factor: 2
+
+decoder:
+  mode: pool
+
+loader:
+  batch_size: 20
+
+optimizer:
+  lr: 0.002
+  weight_decay: 0.03
+
+scheduler:
+  num_training_steps: 800000
+  num_warmup_steps: 5000
+
+trainer:
+  max_epochs: 560
+
+train:
+  seed: 2222

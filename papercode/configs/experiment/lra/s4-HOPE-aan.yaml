@@ -1,0 +1,47 @@
+# @package _global_
+# Current best run
+defaults:
+  - /pipeline: aan
+  - /model: HOPE
+  - override /scheduler: cosine_warmup
+
+decoder:
+  mode: pool
+
+model:
+  dropout: 0.
+  n_layers: 6
+  prenorm: true
+  d_model: 128
+  norm: batch
+  resratio: 0
+  layer:
+    d_state: 64
+    lr:
+      dt: null
+      A: 0.004
+      B: 0.004
+    dt_min: 0.001
+    dt_max: 0.1
+    init: legs
+    bidirectional: true
+    final_act: glu
+    n_ssm: 1
+
+loader:
+  batch_size: 32
+
+optimizer:
+  lr: 0.008
+  weight_decay: 0.03
+
+scheduler:
+  num_training_steps: 100000
+  num_warmup_steps: 5000
+
+trainer:
+  max_epochs: 160
+
+train:
+  seed: 3333
+  interval: step
