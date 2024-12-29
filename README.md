@@ -40,9 +40,9 @@ To train models, use the script `train_global.sh` with the following options:
 
 - **Train S4D without static inputs:**
   ```bash
-  ./train_global.sh ssm no_static
+  ./train_global.sh ssm no_static nostatic
   ```
-  Trains an S4D model with only 5 hydrometeorological inputs (not used in this study).
+  Trains an S4D model with only 5 hydrometeorological inputs (not used in this study). The trained model is labeled as `nostatic`.
 
 ### **Hyperparameters**
 You can configure hyperparameters for the S4D model inside the `train_global.sh` script.
