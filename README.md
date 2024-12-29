@@ -1,7 +1,7 @@
 
 # **S4D Rainfall-Runoff Simulations**
 
-This repository contains the code for the paper *"A Deep State Space Model for Rainfall-Runoff Simulations."* It enables the training and evaluation of three models—**S4D**, **LSTM**, and **MC-LSTM** (Hoedt et al., 2021 [https://arxiv.org/abs/2101.05186])—for streamflow simulations across 531 CAMELS watersheds.
+This repository contains the code for the paper *"A Deep State Space Model for Rainfall-Runoff Simulations."* It enables the training and evaluation of three models—**S4D**, **LSTM**, and **MC-LSTM** (Hoedt et al., 2021)(https://arxiv.org/abs/2101.05186)—for streamflow simulations across 531 CAMELS watersheds.
 
 The code is adapted and organized similarly to [lstm_for_pub](https://github.com/kratzert/lstm_for_pub). As such, many instructions mirror those found in the original repository, with a few modifications specific to this implementation.
 
