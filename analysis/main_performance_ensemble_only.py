@@ -1,14 +1,3 @@
-"""
-This file is part of the accompanying code to our manuscript:
-
-Kratzert, F., Klotz, D., Herrnegger, M., Sampson, A. K., Hochreiter, S., Nearing, G., "Prediction 
-in Ungauged Basins with Long Short-Term Memory Networks". submitted to Water Resources Research 
-(2019)
-
-You should have received a copy of the Apache-2.0 license along with the code. If not,
-see <https://opensource.org/licenses/Apache-2.0>
-"""
-
 import pickle
 import sys
 import numpy as np
@@ -51,9 +40,9 @@ for basin in ens_dict:
         df_seed = ens_dict[basin].filter(regex=f"qsim_{seed}").join(ens_dict[basin]["qobs"])
 
         # Save the time series for the current seed
-        #timeseries_filename = f"{timeseries_output_dir}{basin}_timeseries_seed_{seed}.csv"
-        #df_seed.to_csv(timeseries_filename)
-        #print(f"Saved time series to {timeseries_filename}")
+        timeseries_filename = f"{timeseries_output_dir}{basin}_timeseries_seed_{seed}.csv"
+        df_seed.to_csv(timeseries_filename)
+        print(f"Saved time series to {timeseries_filename}")
 
 
         # Calculate performance measures for the current seed
