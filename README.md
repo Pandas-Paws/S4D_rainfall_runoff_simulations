@@ -83,7 +83,7 @@ To test trained models, use the script `run_global_parallel.py` with the followi
   ```bash
   python run_pub_parallel.py ssm test 49
   ```
-  Tests the trained S4D model after 49 epochs under the pub setup.
+  Tests the trained S4D model after 49 epochs under the pub setup, and the saved output .pkl will be labeled as "test".
 
 ### **Output**
 Test outputs are stored in CSV files in the `./analysis/results/` directory.
