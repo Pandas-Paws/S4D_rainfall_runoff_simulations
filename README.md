@@ -18,7 +18,7 @@ The code is adapted and organized similarly to [lstm_for_pub](https://github.com
   ```
 
 ### **2. Update NLDAS Forcings**
-- Download updated NLDAS forcings (including daily min and max temperatures) from [HydroShare]([https://www.hydroshare.org/](https://www.hydroshare.org/resource/0a68bfd7ddf642a8be9041d60f40868c/)).
+- Download updated NLDAS forcings (including daily min and max temperatures) from [HydroShare](https://www.hydroshare.org/resource/0a68bfd7ddf642a8be9041d60f40868c/).
 - Replace the default CAMELS NLDAS forcings, which only include daily mean temperature.
 
 ---
